@@ -2,6 +2,7 @@ import { useState } from 'react'
 import clsxm from '@/lib/helpers/clsxm'
 import { Switch } from '@headlessui/react'
 import Page from '@/components/layout/Page'
+import PageBreakSpacing from '@/components/layout/PageBreakSpacing'
 
 
 const DownloadedPdfFilename = 'example_generated_pdf_resume.pdf'
@@ -43,9 +44,14 @@ export default function Home () {
 
       {/* Resume PDF Workspace */}
       <main className='flex flex-col items-center'>
-        <Page>
-          Content
-        </Page>
+        <PageBreakSpacing>
+          <Page>
+            Content
+          </Page>
+          <Page>
+            Content
+          </Page>
+        </PageBreakSpacing>
       </main>
 
       <footer id='footer' className='flex h-8 mt-2 items-center justify-center'>
