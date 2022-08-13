@@ -22,6 +22,7 @@ export default function Toolbar ({ downloadFilename, bgToggleState, setBgToggleS
       {/* Background Layouts Helper Switch */}
       <div className='flex px-4 py-2 ml-4 items-center bg-zinc-300 rounded-md'>
         <Switch
+          id='background-layout-toggle'
           checked={ bgToggleState }
           onChange={ setBgToggleState }
           className={clsxm(

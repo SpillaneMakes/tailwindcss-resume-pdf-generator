@@ -7,7 +7,7 @@ import PageBreakSpacing from '@/components/layout/PageBreakSpacing'
 import ExampleResumeLayout from '@/components/examples/ExampleResumeLayout'
 
 
-const DownloadedPdfFilename = 'example_generated_pdf_resume.pdf'
+const DownloadedPdfFilename = 'generated_pdf_resume.pdf'
 
 export default function Home () {
 
@@ -35,6 +35,9 @@ export default function Home () {
       <main className='flex flex-col items-center'>
         <PageBreakSpacing>
           <ExampleResumeLayout />
+
+          {/* Place new pages here */}
+
         </PageBreakSpacing>
       </main>
 

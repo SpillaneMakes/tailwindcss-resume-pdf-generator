@@ -10,6 +10,9 @@ const Handler = async ( req:NextApiRequest, res:NextApiResponse ) => {
   await page.goto('http://localhost:3000', { waitUntil: 'networkidle0' })
   await page.emulateMediaType('screen')
 
+  // Un-comment to export with background layout enabled
+  // await page.click('[id="headlessui-switch-:R1im:"]')
+
   const idRemovalList = '#header, #page-break, #footer'
 
   await page.evaluate(( selector ) => {
