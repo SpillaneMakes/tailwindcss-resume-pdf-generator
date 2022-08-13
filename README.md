@@ -1,4 +1,4 @@
-![[tailwindcss-resume-pdf-generator-banner.png]]
+![Tailwind CSS Resume PDF Generator Banner](public/tailwindcss-resume-pdf-generator-banner.png)
 
 *A pdf generator tool using Tailwindcss, Next.js, and Puppeteer to design resume layouts on standard A4 page.*
 
@@ -40,7 +40,7 @@ yarn dev
 
 4. Open a browser to [localhost:3000](localhost:3000).
 <p align="center">
-  <img style="width: 60%; min-width: 300px;" src="app://local//home/dspil/Documents/MindMap-Vault/1. Areas/SpillaneMakes/Images/Taliwindcss-Resume-PDF-Generator/home-page.png">
+  <img style="width: 60%; min-width: 300px;" src="public/home-page.png">
 </p>
 
 5. Replace the demo page with a new page ( or pages ) in `src/pages/index.tsx`
