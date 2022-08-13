@@ -1,6 +1,6 @@
 
 interface PageProps {
-  children: JSX.Element | JSX.Element | string
+  children: JSX.Element[] | JSX.Element | string
 }
 
 export default function Page ({ children }: PageProps ) {
