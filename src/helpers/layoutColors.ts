@@ -17,10 +17,13 @@ const twColors = [
 ]
 
 const LayoutBgColor = ( index:number ) => {
+  // console.log( index, twColors[index], twColors[index % twColors.length] )
   if ( index <= twColors.length ) {
+    // console.log( index )
     return twColors[ index ]
   } else {
-    return ( twColors[( index % twColors.length -1 )])
+    // console.log( index % twColors.length -1 )
+    return ( twColors[ index % twColors.length ])
   }
 }
 

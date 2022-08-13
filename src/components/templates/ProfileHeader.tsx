@@ -15,10 +15,9 @@ interface ProfileHeaderProps {
 
 export default function ProfileHeader ({ profile }:{ profile:ProfileHeaderProps } ) {
   return (
-    <div className='flex mb-2'>
-
+    <div id='layout' className='flex mb-2'>
       {/* Profile Picture */}
-      <div className='flex relative h-26 w-26 justify-center items-center flex-shrink-0 bg-gray-800 rounded-full'>
+      <div id='layout' className='flex relative h-26 w-26 justify-center items-center flex-shrink-0 bg-gray-800 rounded-full'>
         <div className='relative h-25 w-25 rounded-full overflow-hidden'>
           <Image 
             src={ profile.profilePic }
@@ -32,7 +31,7 @@ export default function ProfileHeader ({ profile }:{ profile:ProfileHeaderProps 
       <div className='flex w-full justify-between items-center'>
 
         {/* Name and Occupation */}
-        <div className='flex flex-col pl-4'>
+        <div id='layout' className='flex flex-col pl-4'>
           <h1 className='text-4xl font-bold text-black'>
             { profile.name }
           </h1>
@@ -42,7 +41,7 @@ export default function ProfileHeader ({ profile }:{ profile:ProfileHeaderProps 
         </div>
 
         {/* Website, Email, and Phone Number */}
-        <div className='flex flex-col items-end'>
+        <div id='layout' className='flex flex-col items-end'>
           <span className='flex items-center'>
             <h2 className='text-xl font-semibold'>
               { profile.website }
@@ -66,7 +65,6 @@ export default function ProfileHeader ({ profile }:{ profile:ProfileHeaderProps 
         </div>
 
       </div>
-
     </div>
   )
 }

@@ -24,6 +24,6 @@
       ],
     }
   },
-  "include": ["next-env.d.ts", "**/*.ts", "**/*.tsx", "src/data/Profile.js"],
+  "include": ["next-env.d.ts", "**/*.ts", "**/*.tsx", "src/data/Profile.js", "src/data/Skills.js"],
   "exclude": ["node_modules"]
 }

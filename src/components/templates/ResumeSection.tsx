@@ -7,15 +7,17 @@ interface ResumeSectionProps {
 
 export default function ResumeSection ({ sectionTitle, className, children }: ResumeSectionProps ) {
   return (
-    <div id='layout' className={ className }>
+    <div id='layout'>
       {/* Section Divider */}
-      <div className='flex items-center mb-1'>
+      <div className='flex items-center mt-2 mb-1'>
         <h2 className='pr-2 text-2xl font-bold'>
           { sectionTitle }
         </h2>
         <div className='w-full border-t border-2 border-black' />
       </div>
-      { children }
+      <div className={ className }>
+        { children }
+      </div>
     </div>
   )
 }

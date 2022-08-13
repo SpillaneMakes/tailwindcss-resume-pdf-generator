@@ -1,6 +1,6 @@
 
 import { Dispatch, SetStateAction } from 'react'
-import clsxm from '@/lib/helpers/clsxm'
+import clsxm from '@/helpers/clsxm'
 import { Switch } from '@headlessui/react'
 
 interface ToolbarProps {

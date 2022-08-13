@@ -1,9 +1,8 @@
 
 import { useState, useEffect } from 'react'
-import LayoutBgColor from '@/lib/helpers/layoutColors'
+import LayoutBgColor from '@/helpers/layoutColors'
 
 import Toolbar from '@/components/layout/Toolbar'
-import Page from '@/components/layout/Page'
 import PageBreakSpacing from '@/components/layout/PageBreakSpacing'
 import ExampleResumeLayout from '@/components/examples/ExampleResumeLayout'
 
@@ -13,7 +12,7 @@ const DownloadedPdfFilename = 'example_generated_pdf_resume.pdf'
 export default function Home () {
 
   const [ bgToggle, setBgToggle ] = useState( false )
-
+  
   useEffect(() => {
     const elements = document.querySelectorAll('#layout')
     bgToggle
@@ -23,7 +22,6 @@ export default function Home () {
   
   return (
     <div className='min-h-screen bg-slate-800'>
-
       <header id='header' className='flex py-4 mb-2 justify-center border-b-2 border-gray-400'>
         {/* Download Button and Layout Colors Toggle */}
         <Toolbar 
@@ -37,9 +35,6 @@ export default function Home () {
       <main className='flex flex-col items-center'>
         <PageBreakSpacing>
           <ExampleResumeLayout />
-          <Page>
-            Content
-          </Page>
         </PageBreakSpacing>
       </main>
 

@@ -1,6 +1,5 @@
 
-import { AcademicCapIcon, CalendarIcon } from '@heroicons/react/outline'
-import { LocationMarkerIcon } from '@heroicons/react/solid'
+import { AcademicCapIcon, CalendarIcon, LocationMarkerIcon } from '@heroicons/react/outline'
 
 interface EducationEntryProps {
   type: string
@@ -22,7 +21,7 @@ interface EducationEntryProps {
 
 export default function EducationEntry ({ education }: { education:EducationEntryProps }) {
   return (
-    <div className='px-1 pb-1'>
+    <div id='layout' className='px-1 pt-1 pb-1'>
 
       <div id='layout' className='flex items-center justify-between'>
         {/* Degree and Optional Minor Recieved */}
@@ -35,8 +34,8 @@ export default function EducationEntry ({ education }: { education:EducationEntr
           </p>
         </div>
         {/* Duration and Completion Status */}
-        <div className='flex items-center text-sm text-gray-600'>
-          <CalendarIcon className='flex-shrink-0 mr-1.5 w-4 h-4 text-gray-600' />
+        <div className='flex items-center text-sm text-gray-800'>
+          <CalendarIcon className='flex-shrink-0 mr-1.5 w-4 h-4 text-gray-800' />
           <p>
             { education.duration }
           </p>
@@ -46,12 +45,12 @@ export default function EducationEntry ({ education }: { education:EducationEntr
 
       {/* University and Campus */}
       <div id='layout' className='flex justify-between'>
-        <p className='flex items-center text-sm text-gray-700'>
-          <AcademicCapIcon className='flex-shrink-0 mr-1.5 w-4 h-4 text-gray-600' />
+        <p className='flex items-center text-base leading-5 text-black'>
+          <AcademicCapIcon className='flex-shrink-0 mr-1.5 w-5 h-5' />
           { education.university }
         </p>
-        <p className='flex items-center text-sm text-gray-700'>
-          <LocationMarkerIcon className='flex-shrink mr-1.5 w-4 h-4 text-gray-600' />
+        <p className='flex items-center text-sm leading-5 text-gray-800'>
+          <LocationMarkerIcon className='flex-shrink mr-1.5 w-4 h-4' />
           { education.campus }
         </p>
       </div>
