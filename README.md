@@ -17,22 +17,27 @@
 
 ## Usage
 
-1. Clone the repository from GitHub.
-```Bash
-git clone https://github.com/SpillaneMakes/tailwindcss-resume-pdf-generator.git
-```
-
-2. Make sure you have a Node package manager installed (e.g. NPM or Yarn).
+0 Pre. Make sure you have a Node package manager installed (e.g. NPM or Yarn).
 ```Bash
 npm --version
 # or
 yarn --version
 ```
 
-3. Navigate to the project directory and start the Next.js project in development mode.
-```Bash
-cd /Downloads/tailwindcss-resume-pdf-generator
+1. Clone the repository from GitHub.
+```
+git clone https://github.com/SpillaneMakes/tailwindcss-resume-pdf-generator
+```
 
+2. Install with npm or yarn
+```
+npm install
+# or
+yarn install
+```
+
+3. And run in dev.
+```Bash
 npm run dev
 # or
 yarn dev
