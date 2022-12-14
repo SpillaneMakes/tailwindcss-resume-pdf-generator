@@ -16,11 +16,11 @@ const twColors = [
   'bg-orange-200'
 ]
 
-const LayoutBgColor = ( index:number ) => {
-  if ( index < twColors.length ) {
-    return twColors[ index ]
+const LayoutBgColor = (index: number) => {
+  if (index < twColors.length) {
+    return twColors[index]
   } else {
-    return ( twColors[ index % twColors.length ])
+    return (twColors[index % twColors.length])
   }
 }
 

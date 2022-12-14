@@ -1,8 +1,9 @@
 ![Tailwind CSS Resume PDF Generator Banner](public/tailwindcss-resume-pdf-generator-banner.png)
 
-*A pdf generator tool using Tailwindcss, Next.js, and Puppeteer to design resume layouts on standard A4 page.*
+_A pdf generator tool using Tailwindcss, Next.js, and Puppeteer to design resume layouts on standard A4 page._
 
 ## Overview
+
 - Create a new page inside a `<Page/>` component and place it inside the `<PageBreakSpacing/>` tags in the main region of the index home page.
 - Create multi-page documents by adding more pages to the resume pdf workspace.
 - Page breaks can be removed from the home page by removing the `<PageBreakSpacing/>` wrapper.
@@ -14,10 +15,13 @@
 - Icons are imported from the packages: [@heroicons](https://heroicons.com/) and [react-icons](https://react-icons.github.io/react-icons/)
 - Start the start Next.js in development mode using the `dev` command to begin designing a new page.
 
-
 ## Usage
 
 0 Pre. Make sure you have a Node package manager installed (e.g. NPM or Yarn).
+<<<<<<< HEAD
+=======
+
+>>>>>>> 6e7c564 (0.1.1 Improved code formatting and instructions)
 ```Bash
 npm --version
 # or
@@ -25,11 +29,21 @@ yarn --version
 ```
 
 1. Clone the repository from GitHub.
+<<<<<<< HEAD
 ```
 git clone https://github.com/SpillaneMakes/tailwindcss-resume-pdf-generator
 ```
 
 2. Install with npm or yarn
+=======
+
+```
+git clone https://github.com/SpillaneMakes/tailwindcss-resume-pdf-generator
+```
+
+2. Install with npm or yarn
+
+>>>>>>> 6e7c564 (0.1.1 Improved code formatting and instructions)
 ```
 npm install
 # or
@@ -37,6 +51,10 @@ yarn install
 ```
 
 3. And run in dev.
+<<<<<<< HEAD
+=======
+
+>>>>>>> 6e7c564 (0.1.1 Improved code formatting and instructions)
 ```Bash
 npm run dev
 # or
@@ -49,6 +67,7 @@ yarn dev
 </p>
 
 5. Replace the demo page with a new page ( or pages ) in `src/pages/index.tsx`
+
 ```tsx
 ...
 	{/* Resume PDF Workspace */}
@@ -60,4 +79,3 @@ yarn dev
 	</main>
 ...
 ```
-

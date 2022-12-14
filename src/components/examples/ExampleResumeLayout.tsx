@@ -16,43 +16,43 @@ import Education from '@/data/Education'
 import { SoftwareSkills, ManagementSkills, ProgrammingSkills, OperatingSystemSkills } from '@/data/Skills'
 
 
-export default function ExampleResumeLayout () {
+export default function ExampleResumeLayout() {
 
   return (
     <Page>
-      <ProfileHeader profile={ Profile } />
+      <ProfileHeader profile={Profile} />
 
       {/* Work Experience with Fetured Details */}
       <ResumeSection sectionTitle='Experience'>
-        { Experience.map(( entry ) => (
-          <ExperienceEntry key={ entry.key } experience={ entry }/>
+        {Experience.map((entry) => (
+          <ExperienceEntry key={entry.key} experience={entry} />
         ))}
       </ResumeSection>
 
       {/* University/College Education */}
       <ResumeSection sectionTitle='Education'>
-        { Education.map(( entry ) => (
-          <EducationEntry key={ entry.degree } education={ entry } />
+        {Education.map((entry) => (
+          <EducationEntry key={entry.degree} education={entry} />
         ))}
       </ResumeSection>
 
       <ResumeSection sectionTitle='Skills' className='flex justify-evenly'>
-        <SkillList 
+        <SkillList
           label='Management Strengths'
-          skillList={ ManagementSkills }
+          skillList={ManagementSkills}
         />
-        <IconSkillList 
+        <IconSkillList
           label='Software Experience'
-          iconSkillList={ SoftwareSkills }
+          iconSkillList={SoftwareSkills}
         />
         <div>
-          <IconSkillList 
+          <IconSkillList
             label='Programming'
-            iconSkillList={ ProgrammingSkills }
+            iconSkillList={ProgrammingSkills}
           />
-          <IconSkillList 
+          <IconSkillList
             label='Operating Systems'
-            iconSkillList={ OperatingSystemSkills }
+            iconSkillList={OperatingSystemSkills}
           />
         </div>
       </ResumeSection>
