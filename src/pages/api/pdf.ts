@@ -3,7 +3,7 @@ import puppeteer from 'puppeteer'
 
 import type { NextApiRequest, NextApiResponse } from 'next'
 
-const Handler = async ( req:NextApiRequest, res:NextApiResponse ) => {
+const Handler = async (req: NextApiRequest, res: NextApiResponse) => {
   const browser = await puppeteer.launch()
   const page = await browser.newPage()
 
@@ -15,10 +15,10 @@ const Handler = async ( req:NextApiRequest, res:NextApiResponse ) => {
 
   const idRemovalList = '#header, #page-break, #footer'
 
-  await page.evaluate(( selector ) => {
-    var elements = document.querySelectorAll( selector )
-    elements.forEach( pageItem => pageItem.parentNode?.removeChild( pageItem ))
-  }, idRemovalList )
+  await page.evaluate((selector) => {
+    var elements = document.querySelectorAll(selector)
+    elements.forEach(pageItem => pageItem.parentNode?.removeChild(pageItem))
+  }, idRemovalList)
 
   const pdfBuffer = await page.pdf({ format: 'A4', printBackground: false })
 
